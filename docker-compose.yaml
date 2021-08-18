@@ -1,0 +1,49 @@
+version: "3"
+services:
+
+  blog:
+    container_name: blog
+    build: .
+    restart: always
+    env_file: 
+        - .env
+    volumes:
+        - .:/usr/src/app
+        - /usr/src/app/node_modules
+    depends_on: 
+        #- sqlite3
+        - redis
+    links:
+        #- sqlite3
+        - redis
+    ports: 
+        - 3000
+    extra_hosts:
+        - "host.docker.internal:172.17.0.1"
+    command: npm run start
+
+  # sqlite3:
+  #   image: nouchka/sqlite3:latest
+  #   stdin_open: true
+  #   tty: true
+  #   volumes:
+  #       - dbdata-volume:/root/db/
+  #   tty: true
+  #   extra_hosts:
+  #       - "host.docker.internal:172.17.0.1"
+
+  redis:
+    image: "redis:alpine"
+    command: redis-server #--requirepass sOmE_sEcUrE_pAsS
+    ports:
+        - "6379:6379"
+    volumes:
+        - $PWD/redis-data:/var/lib/redis
+        - $PWD/redis.conf:/usr/local/etc/redis/redis.conf
+    environment:
+        - REDIS_REPLICATION_MODE=master
+    extra_hosts:
+        - "host.docker.internal:172.17.0.1"
+
+volumes:
+    dbdata-volume:
