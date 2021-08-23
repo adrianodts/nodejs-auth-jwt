@@ -12,7 +12,8 @@ async function criaTokenJwt(usuario) {
 }
 
 module.exports = {
-  adiciona: async (req, res) => {
+
+  async adiciona(req, res) {
     const { nome, email, senha } = req.body;
 
     try {
@@ -36,20 +37,20 @@ module.exports = {
     }
   },
 
-  login : async (req, res) => {
+  async login(req, res) {
     const token = await criaTokenJwt(req.user) // o user é colocado na requisição quando o passport auth é finalizado
     res.set('Authorization', token)
     res.status(204).send()
   },
 
-  lista: async (req, res) => {
+  async lista(req, res) {
     const usuarios = await Usuario.lista();
     res.json(usuarios);
   },
 
-  deleta: async (req, res) => {
-    const usuario = await Usuario.buscaPorId(req.params.id);
+  async deleta(req, res) {
     try {
+      const usuario = await Usuario.buscaPorId(req.params.id);
       await usuario.deleta();
       res.status(200).send();
     } catch (erro) {
@@ -57,7 +58,7 @@ module.exports = {
     }
   },
 
-  logout: async (req, res) => {
+  async logout(req, res) {
     try {
       const token = req.token
       await manipulaBlacklist.adicionaToken(token)

@@ -17,7 +17,7 @@ class Usuario {
       throw new InvalidArgumentError('O usuário já existe!');
     }
 
-    return usuariosDao.adiciona(this);
+    await usuariosDao.adiciona(this);
   }
 
   async adicionaSenha(senha) {
@@ -34,7 +34,7 @@ class Usuario {
 
   
   async deleta() {
-    return usuariosDao.deleta(this);
+    await usuariosDao.deleta(this);
   }
   
   static async buscaPorId(id) {
