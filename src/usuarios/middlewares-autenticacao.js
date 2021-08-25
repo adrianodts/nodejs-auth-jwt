@@ -1,52 +1,74 @@
 const passport = require('passport');
-const jwt = require('jsonwebtoken');
+const Usuario = require('./usuarios-modelo');
 const { InvalidArgumentError } = require('../erros');
+const tokens = require('./tokens');
 
 module.exports = {
-    local: (req, res, next) => {
-        passport.authenticate(
-        'local',  // estrategia 
-        { session: false }, // não usa sessão
-        (error, usuario, info) => { // função callback customizada
-            if (error && error.name === 'InvalidArgumentError') {
-                res.status(401).json({ error: error.message })
-            }
+  local(req, res, next) {
+    passport.authenticate(
+      'local',
+      { session: false },
+      (erro, usuario, info) => {
+        if (erro && erro.name === 'InvalidArgumentError') {
+          return res.status(401).json({ erro: erro.message });
+        }
 
-            if (error) {
-                res.status(500).json({ error: error.message })
-            }
+        if (erro) {
+          return res.status(500).json({ erro: erro.message });
+        }
 
-            if (!usuario) {
-                res.status(401).json()
-            }
+        if (!usuario) {
+          return res.status(401).json();
+        }
 
-            req.user = usuario
-            return next()    
-        })(req, res, next)
-    },
-    bearer: (req, res, next) => {
-        passport.authenticate(
-        'bearer',  // estrategia 
-        { session: false }, // não usa sessão
-        (error, usuario, info) => { // função callback customizada
-            if (error && error.name === 'JsonWebTokenError') {
-                res.status(401).json({ error: error.message })
-            }
+        req.user = usuario;
+        return next();
+      }
+    )(req, res, next);
+  },
 
-            if (error && error.name === 'TokenExpiredError') {
-                res.status(401).json({ error: error.message, expiradoEm: error.expiredAt })
-            }
+  bearer(req, res, next) {
+    passport.authenticate(
+      'bearer',
+      { session: false },
+      (erro, usuario, info) => {
+        if (erro && erro.name === 'JsonWebTokenError') {
+          return res.status(401).json({ erro: erro.message });
+        }
 
-            if (error) {
-                res.status(500).json({ error: error.message })
-            }
-            
-            if (!usuario) {
-                res.status(401).json()
-            }
-            req.token = info.token // vem da estrategia bearer  
-            req.user = usuario
-            return next()    
-        })(req, res, next)
+        if (erro && erro.name === 'TokenExpiredError') {
+          return res
+            .status(401)
+            .json({ erro: erro.message, expiradoEm: erro.expiredAt });
+        }
+
+        if (erro) {
+          return res.status(500).json({ erro: erro.message });
+        }
+
+        if (!usuario) {
+          return res.status(401).json();
+        }
+
+        req.token = info.token;
+        req.user = usuario;
+        return next();
+      }
+    )(req, res, next);
+  },
+
+  async refresh(req, res, next) {
+    try {
+      const { refreshToken } = req.body;
+      const id = await tokens.refresh.verifica(refreshToken);
+      await tokens.refresh.invalida(refreshToken);
+      req.user = await Usuario.buscaPorId(id);
+      return next();
+    } catch (erro) {
+      if (erro.name === 'InvalidArgumentError') {
+        return res.status(401).json({ erro: erro.message });
+      }
+      return res.status(500).json({ erro: erro.message });
     }
-}
+  },
+};
