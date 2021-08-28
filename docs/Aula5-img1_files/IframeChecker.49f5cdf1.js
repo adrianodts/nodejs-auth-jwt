@@ -1,0 +1,1 @@
+"use strict";function isFromIframe(){var e=window.frames.length,t=parent.frames.length;return 0==e&&1<=t}function applyCssStyle(){var e="height:100%";document.querySelector("html").setAttribute("style",e),document.querySelector("body").setAttribute("style",e)}document.addEventListener("DOMContentLoaded",function(){isFromIframe()&&applyCssStyle()});

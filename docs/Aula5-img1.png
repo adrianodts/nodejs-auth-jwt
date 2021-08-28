@@ -1,0 +1,1063 @@
+
+<!-- saved from url=(0088)https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80264 -->
+<html lang="pt-BR" data-product="alura" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./Aula5-img1_files/clipper.647d33f8.css">
+<link rel="stylesheet" href="./Aula5-img1_files/back-to-top.9a8b5967.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="./Aula5-img1_files/23465.js"></script><script type="text/javascript" async="" src="./Aula5-img1_files/analytics.js"></script><script async="" src="./Aula5-img1_files/analytics.js"></script><script async="" src="./Aula5-img1_files/gtm.js"></script><script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer', 'GTM-TN542JN');
+</script>
+<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+        dataLayer.push({
+            'tipoPagina': 'Aula',
+            'curso': 'Node.js: Refresh Tokens e confirmação de cadastro'
+        });
+	</script>
+
+	
+
+	<title>Node.js: Aula 5 - Atividade 8 Para saber mais: Configurando provedor de e-mail real | Alura - Cursos online de tecnologia</title>
+	
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+	
+	<link href="./Aula5-img1_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="./Aula5-img1_files/video-js.5c840c77.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/silvermine-videojs-quality-selector.min.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/prettify.a2c88d69.css">
+
+	<link rel="stylesheet" href="./Aula5-img1_files/base.33d1ddbf.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/formattedText.e58775de.css">
+	
+	<link rel="stylesheet" href="./Aula5-img1_files/container.16466c50.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/classPage.20ba796a.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/menuSettings.436be63b.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/taskProgress.a5300583.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/taskMessageInfo.67eb9bc6.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/alternativeList.7f369f7b.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/taskFeedback.4bda0782.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/markdown.3ec31c65.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/finishSection.bee005cf.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/phrase.6d459a32.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/openquestion.2889f14f.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/video.e82ab0eb.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/singlechoice.b545e19f.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/music.8fe6cab6.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/multiplechoice.70f60e4c.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/videodialog.36286910.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/fillintheblank.59273039.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/speakingpractice.13b2c5c5.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/pronunciationpractice.d512f574.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/repetition.141dc241.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/genericVideo.2a5ae191.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/projectSubmit.4879daff.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/extraContentTask.b2d126e6.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/taskContent.1ef47209.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/taskButtons.ed4fd65b.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/alert.58468b89.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/markdownEditor.27b71b11.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/audioPlayer.0a362c88.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/notes.d6f46832.css">
+	
+	
+
+	<link rel="stylesheet" href="./Aula5-img1_files/dark-mode.5d0b5af5.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/taskFeedbackAnswer.72669c00.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/theater-mode.1c783503.css">
+	<link rel="stylesheet" href="./Aula5-img1_files/autoplay-videojs.250faf62.css">
+
+	
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+
+
+	</style>
+
+
+	<script async="" src="./Aula5-img1_files/hotjar-1638253.js"></script><script async="" src="./Aula5-img1_files/modules.e763089bec9f2503d752.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script src="./Aula5-img1_files/sha256.min.js"></script></head>
+
+
+
+
+<body class=" ">
+<script src="./Aula5-img1_files/avatarOnError.1a705d33.js"></script>
+
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<section class="task  
+" data-allow-answer="true" data-task-section-exam="false" data-task-type="hqexplanation" data-task-id="80264" data-author-id="443190" data-course-code="nodejs-refresh-tokens-confirmacao-cadastro" data-section-name="Verificando endereços" data-section-id="10939" data-section-number="5" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/" data-already-seen-task="true">
+
+	<section class="task-body">
+		
+		
+
+
+
+
+
+
+
+
+
+
+<header class="task-body-header">
+    <div class="container">
+
+        
+            
+            <button title="" aria-label="" type="button" class="theatermode openMenu-button task-menu-button
+                    " id="menu-button-header">
+            </button>
+        
+
+        <h1 class="task-body-header-title">
+            
+            
+            <svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+                <use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+            </svg>
+            <small>08</small>
+            <span class="task-body-header-title-text"> Para saber mais: Configurando provedor de e-mail real</span>
+        </h1>
+        
+            <div class="task-body-header-actions">
+                <a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80264/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit bootcamp-primary-button-theme" style="background-color: #2A7AE4">Próxima Atividade</a>
+            </div>
+        
+
+
+        
+            
+
+
+
+
+
+
+
+<div class="theater-video settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/nodejs-refresh-tokens-confirmacao-cadastro/80264/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+        
+    </div>
+</header>
+		<div class="task-body__wrapper">
+			
+
+
+
+<section class="class-notes">
+    <div class="class-notes-content">
+        <h2 class="class-notes-title">Meu caderno do curso (beta)</h2>
+        <p class="class-notes-description">Este é seu caderno de anotações aqui na Alura. Todo o seu conteúdo fica vísivel apenas para você. Próximos passos para essa funcionalidade  no nosso<a href="https://suporte.alura.com.br/article/308-meu-caderno-como-funciona" class="class-notes-faq-link">FAQ</a></p>
+        <textarea name="text" id="courseNotebook-text" class="class-notes-text" cols="30" rows="10" maxlength="60000"></textarea>
+        <div class="class-notes-save-wrapper">
+            <span>
+                <p class="class-notes-saved-text" aria-hidden="true" style="display: none">Notas salvas</p>
+                <p class="class-notes-limit-text" aria-hidden="true" style="display: none">Não foi possível salvar! Limite de caracteres atingido ({max})!</p>
+            </span>
+            <span class="class-notes-save-button-wrapper">
+                <button class="class-notes-save-button" data-save-text="Salvar caderno" data-saving-text="Salvando">
+                   Salvar caderno</button>
+            </span>
+        </div>
+        <button class="class-notes-close-button"></button>
+    </div>
+</section>
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+
+
+
+<div class="video settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item settings-box-item-darkmode">
+					<button class="dark-mode-action">
+						Modo noturno
+					</button>
+				</li>
+			
+			
+				
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/nodejs-refresh-tokens-confirmacao-cadastro/80264/question">Sugerir alteração</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+
+		<div class="formattedText" data-external-links="">
+			<p>Para enviar e-mails em produção, podem ser necessárias algumas configurações que vão depender do seu caso específico. Abaixo estão dois métodos: um usando o <a href="https://en.wikipedia.org/wiki/Gmail" rel="nofollow noopener" target="_blank">Gmail</a> (mais fácil pra pequenos projetos) e um com outros provedores SMTP (mais indicado para projetos grandes).</p>
+<h3>Usando Gmail</h3>
+<p>Como já <a href="https://nodemailer.com/usage/using-gmail/" rel="nofollow noopener" target="_blank">comentado pelo Nodemailer</a> o Gmail é o jeito mais rápido de começar a enviar e-mails. Porém, ele tem uma grande limitação para grandes projetos e pode ser bem problemático ao usar uma autenticação sem OAuth2. </p>
+<h4>Autenticação com e-mail e senha</h4>
+<p>Para realizar uma autenticação com e-mail e senha, é necessário inserir seus dados no arquivo <code>.env</code> como abaixo:</p>
+<pre class="prettyprint"><code><span class="com"># .env</span><span class="pln">
+</span><span class="com"># [...]</span><span class="pln">
+EMAIL_HOST</span><span class="pun">=</span><span class="str">"smtp.gmail.com"</span><span class="pln">
+EMAIL_USUARIO</span><span class="pun">=</span><span class="str">"&lt;seu usuário de e-mail&gt;@gmail.com"</span><span class="pln">
+EMAIL_SENHA</span><span class="pun">=</span><span class="str">"&lt;sua senha&gt;"</span><span class="pln">
+NODE_ENV</span><span class="pun">=</span><span class="str">"development"</span></code><button type="button" class="clipit">Copiar código</button></pre><blockquote>
+<p><strong>Atenção</strong>: cuidado com projetos que usam git! Lembre-se de fazer o  <a href="https://docs.github.com/pt/github/using-git/ignoring-files" rel="nofollow noopener" target="_blank">git ignorar o arquivo</a> <code>.env</code>, escrevendo o nome do arquivo no <code>.gitignore</code>. Caso contrário, seu e-mail e senha podem ser publicados na internet.</p>
+</blockquote>
+<p>Em seguida, é preciso acessar as <a href="https://myaccount.google.com/security" rel="nofollow noopener" target="_blank">configurações de segurança da sua conta Google</a>. </p>
+<p><img src="./Aula5-img1_files/Aula5-img1.png" alt="Aula5-img1.png"></p>
+<p>Como o Gmail espera que uma pessoa real use o e-mail, ele usa uma série de heurísticas para prevenir ataques. Algumas dessas prevenções são o conceito de <a href="https://support.google.com/accounts/answer/6010255?hl=pt-BR" rel="nofollow noopener" target="_blank">App menos seguro</a> e <a href="https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&amp;hl=pt-BR" rel="nofollow noopener" target="_blank">verificação em duas etapas</a>. </p>
+<p>Para que o envio de e-mails da sua aplicação Node não seja bloqueado, é necessário ativar o <strong>Acesso a app menos seguro</strong>:</p>
+<ul><li>Nas configurações de segurança, na seção de “Acesso a app menos seguro”, clique no link “Ativar acesso (não recomendado)”;</li></ul>
+<p><img src="./Aula5-img1_files/Aula5-img2.png" alt="Aula5-img2.png"></p>
+<ul><li>Em seguida, marque a checkbox para ativar a permissão de aplicativos menos seguros.</li></ul>
+<p><img src="./Aula5-img1_files/Aula5-img3.png" alt="Aula5-img3.png"></p>
+<ul><li>Com isso, você verá a checkbox ativada como na imagem abaixo;</li></ul>
+<p><img src="./Aula5-img1_files/Aula5-img4.png" alt="Aula5-img4.png"></p>
+<ul><li>E o painel de configurações mostrará que o acesso está agora ativado.</li></ul>
+<p><img src="./Aula5-img1_files/Aula5-img5.png" alt="Aula5-img5.png"></p>
+<p>Além disso, <strong>caso a verificação de duas etapas esteja desativada</strong> (menos seguro), como na imagem abaixo, estará tudo pronto! Você já pode enviar e-mails com sua aplicação Node usando uma conta Gmail.</p>
+<p><img src="./Aula5-img1_files/Aula5-img6.png" alt="Aula5-img6.png"></p>
+<p><strong>Caso queria continuar com a verificação em duas etapas ativada</strong> (mais seguro), é preciso criar uma senha de app. Para isso, acesse a aba de “Senhas de app”:</p>
+<p><img src="./Aula5-img1_files/Aula5-img7.png" alt="Aula5-img7.png"></p>
+<p>E selecione o app “Outro (nome personalizado)”, preenchendo o nome da sua aplicação.</p>
+<p><img src="./Aula5-img1_files/Aula5-img8.png" alt="Aula5-img8.png"></p>
+<p>Isso vai gerar uma senha <code>&lt;senha app&gt;</code> na caixa amarela abaixo.</p>
+<p><img src="./Aula5-img1_files/Aula5-img9.png" alt="Aula5-img9.png"></p>
+<p>Além disso, você pode conferir que a nova senha foi de fato adicionada.</p>
+<p><img src="./Aula5-img1_files/Aula5-img10.png" alt="Aula5-img10.png"></p>
+<p>Com isso, substitua a senha do seu e-mail pela senha de app <code>&lt;senha app&gt;</code> no arquivo de variáveis de ambiente <code>.env</code>:</p>
+<pre class="prettyprint"><code><span class="com"># .env</span><span class="pln">
+</span><span class="com"># [...]</span><span class="pln">
+EMAIL_SENHA</span><span class="pun">=</span><span class="str">"&lt;senha app&gt;"</span><span class="pln">
+</span><span class="com"># [...]</span></code><button type="button" class="clipit">Copiar código</button></pre><p>Assim, está tudo pronto. Você vai conseguir enviar e-mails com sua aplicação Node e continuar com autenticação em duas etapas em outras situações.</p>
+<h4>Autenticação com OAuth 2</h4>
+<p>Mesmo fácil de implementar e entender, realizar logins para o Gmail usando e-mail pode causar vários problemas e limitações. Para resolver esse problema, o mais indicado é realizar autenticação usando um outro método: o OAuth 2.</p>
+<p>Uma autenticação com OAuth 2 pode exigir uma modificação maior do código atual e um conhecimento sobre o OAuth 2. Mesmo assim, você ainda pode conferir as <a href="https://nodemailer.com/smtp/oauth2/" rel="nofollow noopener" target="_blank">intruções do Nodemailer sobre essa alternativa</a> (em inglês).</p>
+<h3>Usando outros provedores de e-mail</h3>
+<p>Apesar da praticidade do e-mail gratuito do Google, ele possui um <a href="https://support.google.com/mail/answer/22839?hl=pt-BR" rel="nofollow noopener" target="_blank">limite de envio de 500 e-mails por dia</a>. Dessa forma, se sua aplicação tiver mais que 500 usuários, ela pode ter problemas ao se comunicar com todos eles.</p>
+<p>Por isso, existem serviços dedicados ao envio de e-mail e oferecem planos (gratuitos e pagos) de acordo com sua demanda. Alguns deles são:</p>
+<ul><li><a href="https://pt.sendinblue.com/" rel="nofollow noopener" target="_blank">Sendinblue</a></li><li><a href="https://www.mailgun.com/" rel="nofollow noopener" target="_blank">Mailgun</a></li><li><a href="https://sendgrid.com/" rel="nofollow noopener" target="_blank">SendGrid</a></li><li><a href="https://aws.amazon.com/pt/ses/" rel="nofollow noopener" target="_blank">Amazon SES</a></li><li><a href="https://postmarkapp.com/" rel="nofollow noopener" target="_blank">Postmark</a></li></ul>
+<p>Seus planos gratuitos variam entre 100/300 e-mails por dia mas podem ser facilmente estendidos com planos pagos. Por exemplo, o Sendinblue possui planos com limites de 40 mil e-mails por mês por $ 25 (25 dólares) por mês. É importante analisar suas demandas e opções pois cada provedor e plano possuem serviços e modos de cobrança diferentes.</p>
+<p>Além disso, alguns serviços de envio de e-mails possuem <a href="https://sendgrid.com/solutions/email-api/" rel="nofollow noopener" target="_blank">APIs em Node.js</a> que podem substituir o Nodemailer. Mesmo assim, costumam ter uma funcionalidade muito parecida, sem necessitar uma modificação muito grande do código atual.</p>
+<p>Assim, é natural que projetos possam iniciar com alternativas mais baratas e limitadas. Porém, conforme eles vão crescendo, é importante buscar alternativas que consigam suprir suas demandas.</p>
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+	
+	
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+        
+        <a href="https://cursos.alura.com.br/forum/curso-nodejs-refresh-tokens-confirmacao-cadastro/exercicio-para-saber-mais-configurando-provedor-de-e-mail-real/80264/novo" class=" task-actions-button task-actions-button-forum bootcamp-secondary-button-theme" target="_blank">
+            
+                
+                
+                    Discutir no Forum
+                
+            
+        </a>
+    
+
+
+
+				
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80264/next" style="background-color: #2A7AE4" class="task-actions-button task-body-actions-button task-actions-button-next bootcamp-next-button bootcamp-primary-button-theme">Próxima Atividade</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+			</main>
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button title="Abrir menu/Fechar menu" aria-label="Abrir menu/Fechar menu" type="button" class="openMenu-button task-body-button ">
+</button>
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-714.188px);">
+	<section class="task-menu-header">
+		<button title="Fechar menu" aria-label="Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro" title="Ir para página do curso">
+				
+					
+					
+						<img src="./Aula5-img1_files/nodejs-refresh-tokens-confirmacao-cadastro.svg" alt="ícone Node.js: Refresh Tokens e confirmação de cadastro" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">Node.js: Refresh Tokens e confirmação de cadastro</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">94%</span>
+					
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 94%, transparent 94%);"></span>
+				</div>
+			
+
+		</div>
+	</section>
+	
+		<form class="task-menu-header-search" target="_blank" action="https://cursos.alura.com.br/search/course/nodejs-refresh-tokens-confirmacao-cadastro" method="get">
+			<label class="task-menu-header-search-title" for="query">Buscar neste curso</label>
+			<input class="task-menu-header-search-input" name="query" id="query" type="text" required="">
+			<button class="task-menu-header-search-button">Buscar <img aria-hidden="true" class="task-menu-header-search-button-img" src="./Aula5-img1_files/icon-new-page.svg"></button>
+		</form>
+	
+	
+	<section class="task-menu-section sr-only">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>05</strong>
+				<span>de 05</span>
+			</span>
+			<h3 class="task-menu-section-title-text">
+				Verificando endereços
+			</h3>
+		</div>
+	</section>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aula Atual
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/nodejs-refresh-tokens-confirmacao-cadastro/section/&#39;+this.value+&#39;/tasks&#39;;">
+			
+				<option value="10935">01. Autenticação com refresh tokens</option>
+			
+				<option value="10936">02. Implementando refresh tokens</option>
+			
+				<option value="10937">03. Modularizando os tokens</option>
+			
+				<option value="10938">04. Verificação de e-mails</option>
+			
+				<option value="10939" selected="">05. Verificando endereços</option>
+			
+		</select>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>8 de 12</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80262" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto da aula anterior">
+							Projeto da aula anterior
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80071" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Adicionando novo campo">
+							Adicionando novo campo
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">05min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80072" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Modificando novo campo">
+							Modificando novo campo
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80073" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Implementando a rota">
+							Implementando a rota
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">10min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80074" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Gerando endereços dinâmicos">
+							Gerando endereços dinâmicos
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">13min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80263" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Única escolha concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Endereços dinâmicos">
+							Endereços dinâmicos
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80075" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Refatorando para produção">
+							Refatorando para produção
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80264" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#COMPLEMENTARY_INFORMATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Para saber mais: Configurando provedor de e-mail real">
+							Para saber mais: Configurando provedor de e-mail real
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80266" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#DO_AFTER_ME"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Faça como eu fiz">
+							Faça como eu fiz
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80267" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto do curso">
+							Projeto do curso
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80265" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Explicação não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#WHAT_WE_LEARNED"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O que aprendemos?">
+							O que aprendemos?
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80076" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Conclusão">
+							Conclusão
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">03min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+			
+		</ul>
+	</nav>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		
+			
+			<a href="https://cursos.alura.com.br/forum/curso-nodejs-refresh-tokens-confirmacao-cadastro/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso" target="_blank">
+				
+					
+					
+						Fórum do curso
+					
+				
+			</a>
+		
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Voltar para Dashboard</a>
+		<section class="task-container-flex ">
+			
+				<div class="task-group-border ">
+					<button class="task-edit-mode settings-box-item-darkmode">Modo noturno</button>
+				</div>
+			
+			
+				<div class="task-group-border ">
+					<button class="class-notes-button">Abrir caderno</button>
+				</div>
+			
+		</section>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/adrianodts" title="Ir para sua página de usuário">
+			<img src="./Aula5-img1_files/bb1270e8b3f78060f608b1c7ff060625.png" alt="Gravatar de ADRIANO DANTAS DA SILVA" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">ADRIANO DANTAS DA SILVA</span>
+					<span class="task-menu-footer-detalhes-xp">
+						64.8k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Aula5-img1_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+
+
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="https://cursos.alura.com.br/course/nodejs-refresh-tokens-confirmacao-cadastro/task/80264" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+
+
+
+
+
+
+	
+		<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1638253,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+	
+
+	<script src="./Aula5-img1_files/jquery-3.6.0.min.js"></script>
+	<script src="./Aula5-img1_files/buttonToggle.js"></script>
+	<script src="./Aula5-img1_files/sectionMenu.2bb600e2.js" async=""></script>
+
+
+    <script src="./Aula5-img1_files/purify.min.js"></script>
+
+	<script src="./Aula5-img1_files/caret.js" async=""></script>
+	<script src="./Aula5-img1_files/keydownWatchers.fdc4ec79.js" async=""></script>
+	<script src="./Aula5-img1_files/prettify.min.js" async=""></script>
+
+	<script src="./Aula5-img1_files/preventsMultipleInteractions.19502e19.js" async=""></script>
+	<script src="./Aula5-img1_files/assessment.78d1fb98.js" async=""></script>
+
+	<script src="./Aula5-img1_files/menuSettings.fb011b3b.js"></script>
+	<script src="./Aula5-img1_files/aria.c6966b53.js"></script>
+	<script src="./Aula5-img1_files/ProjectSubmit.949766d0.js"></script>
+	<script src="./Aula5-img1_files/classPage.1fa116eb.js"></script>
+	<script src="./Aula5-img1_files/phrase.dfd04ee1.js"></script>
+	<script src="./Aula5-img1_files/feedback.7962df4a.js"></script>
+	<script src="./Aula5-img1_files/ExtraContentProgressRequest.e868061c.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="./Aula5-img1_files/partitura.d5cb1e7e.js"></script>
+	<script src="./Aula5-img1_files/audioProgress.422af45b.js"></script>
+	<script src="./Aula5-img1_files/audioPlayer.a98712ad.js"></script>
+
+		
+	<script src="./Aula5-img1_files/VideoTranscription.22ea2382.js"></script>
+	<script src="./Aula5-img1_files/MarkdownProcessing.0eb1da12.js"></script>
+	<script src="./Aula5-img1_files/clipboard.min.js"></script>
+	<script src="./Aula5-img1_files/Clipper.ef194f3f.js"></script>
+	<script src="./Aula5-img1_files/scroll-to-top.47438d71.js"></script>
+	<script>
+		new VideoTranscription();
+		new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+		new Clipper("Copiar código", "Código copiado!", "Falha ao copiar o código!");
+		window.addEventListener('load', () => new BackToTopButton().init());
+	</script>
+
+
+	
+
+	<script src="./Aula5-img1_files/darkMode.6a4f1e0c.js"></script>
+
+	
+		
+
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42101548-1', 'alura.com.br');
+
+    
+        ga('set', 'userId', '443190');
+    
+
+    ga('require', 'displayfeatures');
+    
+    ga('send', 'pageview');
+    
+    
+</script>
+	
+
+	<script>new DarkModeToggler().refreshListener()</script>
+
+	<script src="./Aula5-img1_files/ClassNotes.c71ce871.js">
+	</script>
+<script>
+	new ClassNotes(false).refreshListeners();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="./Aula5-img1_files/uploadImages.7c1a29db.css" rel="stylesheet">
+
+<script src="./Aula5-img1_files/UploadProgress.7b7f16b7.js"></script>
+<script src="./Aula5-img1_files/ImagesClient.b2cf24f1.js"></script>
+
+<script src="./Aula5-img1_files/marked.min.js"></script>
+
+<script src="./Aula5-img1_files/enableForumButtons.9eb76083.js"></script>
+
+
+<script>
+    var IMAGE_UPLOAD_MESSAGES = {
+        imageUploadMessageInit: `Anexe arquivos arrastando e soltando`,
+        imageUploadMessageDragEnter: `Solte a imagem para fazer o upload`,
+        imageUploadMessageDrop: `Enviando a imagem #images_names#`,
+        imageUploadMessageProgress: `Enviando a imagem #images_names#: #progress#%`,
+        imageUploadMessageUploaded: `Imagem enviada com sucesso!`,
+        imageUploadMessageSizeUnits: `MB`,
+        imageUploadMessageTag: `![Insira aqui a descrição dessa imagem para ajudar na acessibilidade](#url#) `
+    }
+</script>
+
+
+    
+        <link href="./Aula5-img1_files/hackeditor.min.css" rel="stylesheet">
+        <link href="./Aula5-img1_files/hackeditor.custom.css" rel="stylesheet">
+
+
+        <script src="./Aula5-img1_files/hackeditor.min.js"></script>
+        <script src="./Aula5-img1_files/hackeditor.custom.js"></script>
+        <script>
+            const setupEditorsOnPage = (e) => {
+                const toolbarActionsHints = {
+                    toggleHeadingActionHint: `Título`,
+                    toggleBoldActionHint: `Negrito`,
+                    toggleItalicActionHint: `Itálico`,
+                    toggleOrderedListActionHint: `Lista ordenada`,
+                    toggleUnorderedListActionHint: `Lista não ordenada`,
+                    togglePreviewActionHint: `Pré-visualizar`,
+                    drawTableActionHint: `Inserir Tabela`,
+                    drawCodeActionHint: `Inserir bloco de código`,
+                    drawLinkActionHint: `Inserir Link`,
+                    drawImageActionHint: `Inserir Imagem`,
+                    drawUploadedImageActionHint: `Upload de imagem`,
+                    undoActionHint: `Desfazer`,
+                    redoActionHint: `Refazer`
+                }
+
+                const imageUploadErrors = {
+                    imageErrorLimit: `Você só pode inserir 5 imagens por vez!`,
+                    imageFileNotAllowed: `O arquivo filename não é permitido, apenas imagens!`,
+                    imageVeryLarge: `O arquivo filename é maior que o limite de 2 MB.`,
+                    imageMaliciousFile: `O arquivo filename contém conteúdo malicioso.`
+                }
+
+                window.editors = window.editors || [];
+
+                const textAreaEditors = Array.from(document.querySelectorAll('.hackeditor > textarea'));
+                const editorsElements = window.editors.map(ed => ed.element.name);
+
+                textAreaEditors
+                    .filter(e => e.closest('.taskForms') == null)
+                    .filter(e => editorsElements.length == 0 ? true : !editorsElements.includes(e.name))
+                    .forEach(editorTextArea => {
+                        const editor = setupHackEditor({
+                            editorOptions: {
+                                element: editorTextArea,
+                                initialValue: editorTextArea.innerText,
+                                syncPreview: true,
+                                maxHeight: "300px",
+                                toolbarActionsHints,
+                                imageUploadMessages: IMAGE_UPLOAD_MESSAGES,
+                                imageUploadErrors,
+                                imageUploadClient: new ImagesClient(
+                                    'https://www.gnarususercontent.com.br/images',
+                                    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTY0NDM0MzQsImtleSI6IjdiMjcwMTliLWRlNDgtNGQyZi1iOTYyLTFkOWYyMzcyZjliNyJ9.ZBnDO5eAPNeO8zVrIZiYM0RiHiFkaQMkGR3jHKyltD0',
+                                    1,
+                                    443190
+                                ),
+                                allowImageUpload: editorTextArea.dataset.allowImageUpload
+                                },
+                                extensions: {
+                                    DOMPurify,
+                                    marked,
+                                }
+                        });
+
+                        window.editors.push({
+                            instance: editor,
+                            element: editorTextArea,
+                        });
+
+                        enableForumButtons();
+                });
+            }
+
+            window.addEventListener('DOMContentLoaded', setupEditorsOnPage);
+            document.addEventListener('change', setupEditorsOnPage);
+        </script>
+    
+    
+
+<script src="./Aula5-img1_files/IframeChecker.49f5cdf1.js"></script>
+
+
+
+
+<script type="text/javascript" id="">elements=document.querySelectorAll("input, select");elements.forEach(function(b,c){b.addEventListener("change",function(a){a=this.getAttribute("name");dataLayer.push({event:"gaEvent",eventCategory:"Formul\u00e1rios",eventAction:"Altera\u00e7\u00e3o",eventLabel:a})})});</script>
+<script type="text/javascript" id="">var key="Think_Again45984$%";function log(a){console.log(a)}function getPars(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function userId(a){a=sha256.hmac(key,a);dataLayer.push({event:"userId",userId:a})}var script=document.createElement("script");script.onload=function(){var a=getPars().e;a&&userId(a);a=document.querySelectorAll('[type\x3d"email"]');for(var b=0;b<a.length;b++)a[b].onchange=function(){userId(this.value)}};script.src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js";
+document.head.appendChild(script);</script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Aula5-img1_files/box-25a418976ea02a6f393fbbe77cec94bb.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><button class="back-to-top" type="button" style="display: none;"><span class="back-to-top__text">Voltar ao topo</span></button></body></html>

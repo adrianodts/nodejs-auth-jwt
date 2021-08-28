@@ -9,8 +9,8 @@ module.exports = {
   async adiciona(usuario){
     try {
       await dbRun(
-        `INSERT INTO usuarios (nome, email, senhaHash) VALUES (?, ?, ?)`,
-        [usuario.nome, usuario.email, usuario.senhaHash],
+        `INSERT INTO usuarios (nome, email, senhaHash, emailVerificado) VALUES (?, ?, ?, ?)`,
+        [usuario.nome, usuario.email, usuario.senhaHash, usuario.emailVerificado],
       );
     } catch (error) {
       throw new InternalServerError('Erro ao adicionar o usuário!');
@@ -48,6 +48,16 @@ module.exports = {
       );
     } catch (error) {
       throw new InternalServerError('Erro ao deletar o usuário!');
+    }
+  },
+
+  async modificaEmailVerificado(usuario, emailVerificado) {
+    try {
+      return await dbRun(
+        `UPDATE usuarios set emailVerificado = ? WHERE id = ?`, [emailVerificado, usuario.id]
+      );
+    } catch (error) {
+      throw new InternalServerError('Erro ao verificar o email do usuário!');
     }
   }
 };

@@ -1,6 +1,7 @@
 const usuariosControlador = require('./usuarios-controlador');
 const middlewaresAutenticacao = require('./middlewares-autenticacao')
 
+
 module.exports = app => {
 
   app
@@ -22,8 +23,12 @@ module.exports = app => {
     .get(usuariosControlador.lista);
 
   app.route('/usuario/:id').delete(
-    middlewaresAutenticacao.bearer,
+    [middlewaresAutenticacao.bearer],
     usuariosControlador.deleta);
     //passport.authenticate('bearer', { session: false }), 
+
+  app
+    .route('/usuario/verifica_email/:token')
+    .get(middlewaresAutenticacao.verificacaoEmail, usuariosControlador.verificaEmail);
 
 };
